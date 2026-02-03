@@ -1,6 +1,8 @@
 package sabatinoprovenza.BE_S5_L1.entities;
 
+import lombok.ToString;
 
+@ToString
 public abstract class MenuItem {
 
     private String name;
