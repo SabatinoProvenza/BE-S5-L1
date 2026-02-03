@@ -9,7 +9,7 @@ public class Table {
     public Table(int tableNumber, int maxSeats) {
         this.tableNumber = tableNumber;
         this.maxSeats = maxSeats;
-        this.occupied = false; // di default un tavolo è libero
+        this.occupied = false;
     }
 
     public int getTableNumber() {

@@ -3,11 +3,8 @@ package sabatinoprovenza.BE_S5_L1.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import sabatinoprovenza.BE_S5_L1.entities.Drink;
-import sabatinoprovenza.BE_S5_L1.entities.Menu;
 import sabatinoprovenza.BE_S5_L1.entities.Pizza;
 import sabatinoprovenza.BE_S5_L1.entities.Topping;
-
-import java.util.List;
 
 @Configuration
 public class MenuConfig {
@@ -83,26 +80,26 @@ public class MenuConfig {
     }
 
     // -------- MENU --------
-    @Bean
-    public Menu menu(
-            Pizza margheritaPizza,
-            Pizza hawaiianPizza,
-            Pizza salamiPizza,
-            Pizza doubleSalamiPizza,
-            Topping cheese,
-            Topping ham,
-            Topping onions,
-            Topping pineapple,
-            Topping salami,
-            Drink lemonade,
-            Drink water,
-            Drink wine
-    ) {
-        return new Menu(
-                List.of(margheritaPizza, hawaiianPizza, salamiPizza, doubleSalamiPizza),
-                List.of(cheese, ham, onions, pineapple, salami),
-                List.of(lemonade, water, wine)
-        );
-    }
+//    @Bean
+//    public Menu menu(
+//            Pizza margheritaPizza,
+//            Pizza hawaiianPizza,
+//            Pizza salamiPizza,
+//            Pizza doubleSalamiPizza,
+//            Topping cheese,
+//            Topping ham,
+//            Topping onions,
+//            Topping pineapple,
+//            Topping salami,
+//            Drink lemonade,
+//            Drink water,
+//            Drink wine
+//    ) {
+//       return new Menu(
+//                List.of(margheritaPizza, hawaiianPizza, salamiPizza, doubleSalamiPizza),
+//               List.of(cheese, ham, onions, pineapple, salami),
+//                List.of(lemonade, water, wine)
+//        );
+//    }
 }
 

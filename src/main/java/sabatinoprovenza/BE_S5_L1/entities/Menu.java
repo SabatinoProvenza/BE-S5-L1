@@ -1,10 +1,12 @@
 package sabatinoprovenza.BE_S5_L1.entities;
 
 import lombok.Getter;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Getter
+@Component
 public class Menu {
 
     private List<Pizza> pizzas;
